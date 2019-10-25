@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>my.Tutor - {{ title }}</title>
+	{% else %}
+		<title>my.Tutor</title>
+	{% endif %}
+</head>
+<body>
+	_{% block content %} {% endblock content %}
+</body>
+</html>
